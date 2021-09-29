@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rock" translatesAutoresizingMaskIntoConstraints="NO" id="k7k-0m-0py">
+                                <rect key="frame" x="132" y="273" width="150" height="150"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rock" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-1J-Jua">
+                                <rect key="frame" x="132" y="473" width="150" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-Iu-n7H">
+                                <rect key="frame" x="71" y="317.5" width="32" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqw-6r-700">
+                                <rect key="frame" x="71" y="517.5" width="32" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nN-3L-BsY">
+                                <rect key="frame" x="53.5" y="140.5" width="67" height="55"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Rock"/>
+                                <connections>
+                                    <action selector="rock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogg-Hu-vT6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvN-cN-hLd">
+                                <rect key="frame" x="166.5" y="140.5" width="81" height="55"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Paper"/>
+                                <connections>
+                                    <action selector="paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ilt-Ul-IHH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k09-q6-Bgj">
+                                <rect key="frame" x="270.5" y="140.5" width="113" height="55"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Scissors"/>
+                                <connections>
+                                    <action selector="scissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfA-ie-TMU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROd-Bg-Qfz">
+                                <rect key="frame" x="306" y="413" width="62" height="70"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="41"/>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="player_is_ready:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ile-oc-K86"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCT-sO-mgH">
+                                <rect key="frame" x="42" y="645" width="330" height="66.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLU-Lf-808" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lPo-dN-vWR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.92820353592140048" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oLU-Lf-808" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0vq-xQ-ZJx"/>
+                            <constraint firstItem="EvN-cN-hLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1tV-nq-4NC"/>
+                            <constraint firstItem="ROd-Bg-Qfz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="3dK-3j-tcA"/>
+                            <constraint firstItem="zDi-1J-Jua" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4NK-qp-S9C"/>
+                            <constraint firstItem="0nN-3L-BsY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="5Of-jj-Aas"/>
+                            <constraint firstItem="k09-q6-Bgj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="8Al-91-1uo"/>
+                            <constraint firstItem="tCT-sO-mgH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="230" id="8n1-t1-TeZ"/>
+                            <constraint firstItem="k7k-0m-0py" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lc-bB-gak"/>
+                            <constraint firstItem="tCT-sO-mgH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CFf-AO-pSA"/>
+                            <constraint firstItem="ROd-Bg-Qfz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cg4-at-7hK"/>
+                            <constraint firstItem="0nN-3L-BsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="DNp-Rg-eoz"/>
+                            <constraint firstItem="EvN-cN-hLd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="HAC-Ja-rvt"/>
+                            <constraint firstItem="k09-q6-Bgj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="KZT-1Q-UuI"/>
+                            <constraint firstItem="mRK-Iu-n7H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="XqI-Zp-Qce"/>
+                            <constraint firstItem="oLU-Lf-808" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fOj-Ni-CeE"/>
+                            <constraint firstItem="mRK-Iu-n7H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="oVi-hi-SAm"/>
+                            <constraint firstItem="zDi-1J-Jua" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="tqt-4s-Cjm"/>
+                            <constraint firstItem="oLU-Lf-808" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uMh-Qa-bkM"/>
+                            <constraint firstItem="k7k-0m-0py" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="wjX-QY-Rw1"/>
+                            <constraint firstItem="Fqw-6r-700" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="yEY-p1-ERk"/>
+                            <constraint firstItem="Fqw-6r-700" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="ycB-TS-vIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdBanner" destination="oLU-Lf-808" id="SyC-Lx-PgY"/>
+                        <outlet property="computer_image" destination="zDi-1J-Jua" id="dhI-Ax-qAc"/>
+                        <outlet property="computer_score" destination="Fqw-6r-700" id="pQX-Ig-6lT"/>
+                        <outlet property="player_image" destination="k7k-0m-0py" id="zxQ-9e-cyO"/>
+                        <outlet property="player_score" destination="mRK-Iu-n7H" id="kxG-LY-eR9"/>
+                        <outlet property="winner_lable" destination="tCT-sO-mgH" id="7Uq-Il-iyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rock" width="150" height="150"/>
+    </resources>
+</document>
